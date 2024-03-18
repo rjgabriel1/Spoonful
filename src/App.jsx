@@ -12,11 +12,13 @@ import Home from "./pages/Home";
 import AuthLayout from "./layouts/AuthLayout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Feed from "./pages/Feed"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />} errorElement={<NotFound/>}>
       <Route index element={<Home />} />
+      <Route path="feed" element={ <Feed/>} />
       <Route path="create" element={<Create />} />
       <Route path="profile" element={<Profile />} />
       <Route path="/auth" element={<AuthLayout />}>

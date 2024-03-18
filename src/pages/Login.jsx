@@ -1,4 +1,5 @@
-import { EmailIcon, LockIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import { EmailIcon, LockIcon, ViewIcon, ViewOffIcon,Icon } from "@chakra-ui/icons";
+import { ImSpoonKnife } from "react-icons/im";
 import {
   Button,
   Container,
@@ -32,8 +33,8 @@ export default function Login() {
     });
   };
   return (
-    <Container maxW={"480px"}  py={"100px"} centerContent>
-      <Heading mb={"20px"}>Login</Heading>
+    <Container maxW={"480px"} py={"100px"} centerContent>
+      <Heading mb={"30px"} size={{base: "md",lg:"lg"}}>Login</Heading>
       <Form>
         <FormControl mb={"20px"} isRequired>
           <InputGroup>
@@ -59,7 +60,7 @@ export default function Login() {
           </InputGroup>
         </FormControl>
         <Text color="orange.600" mb={"20px"}>
-        <Link to="#">Forgot password?</Link>
+          <Link to="#">Forgot password?</Link>
         </Text>
 
         <Button
@@ -75,7 +76,9 @@ export default function Login() {
 
         <Text>
           {`Don't have an account? `}
-          <Link to="../register" style={{color:"orangered"}}>Register</Link>
+          <Link to="../register" style={{ color: "orangered" }}>
+            Register
+          </Link>
         </Text>
       </Form>
     </Container>
