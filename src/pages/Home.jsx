@@ -32,6 +32,7 @@ export default function Home() {
           fontSize={{ base: "22px", lg: "46px" }}
           lineHeight="tall"
           textAlign={"center"}
+          mt={{base:"12px",md:"10", lg:"10px"}}
         >
           <Highlight
             query={"Discover"}
@@ -55,7 +56,7 @@ export default function Home() {
 
         <Button
           rightIcon={<ArrowForwardIcon />}
-          mt={"25px"}
+          mt={{base:"40px", lg:"25px"}}
           variant={"outline"}
           borderRadius={"full"}
           colorScheme="blue"
